@@ -6,12 +6,12 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int[] A = new int[9];
+		int[] A = new int[9]; // 배열 칸수 지정 
 
 		for (int i = 0; i < A.length; i++) {
-			A[i] = sc.nextInt();
+			A[i] = sc.nextInt(); // 범위 값 지정 및 입력값
 		}
-		sc.close();
+		sc.close(); // 스캐너 닫기
 
 		for (int i = 0; i < A.length; i++) {
 
@@ -28,7 +28,7 @@ public class Main {
 					if ((sum - (A[i] + A[j]) == 100)) {
 						ai = i;
 						aj = j;
-						break;
+						break; // i와 j가 동일 수가 나오지 않게 하기 위해 i != j를 입력함
 					}
 				}
 			}

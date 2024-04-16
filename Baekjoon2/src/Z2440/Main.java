@@ -19,3 +19,10 @@ public class Main {
 	}
 
 }
+
+//for (int i=0; i<N;i++) {
+//	for(int j=0; j<N-i;j++) {
+//		System.out.print("*");
+//	}
+//	System.out.println("");
+//} 											ÀÌ°Íµµ µÊ

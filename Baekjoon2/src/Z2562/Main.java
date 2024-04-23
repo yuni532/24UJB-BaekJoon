@@ -1,6 +1,5 @@
 package Z2562;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -8,22 +7,22 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int[] arr = new int [9];
-		
+		int A =0;
+		int max = 0;
 		for (int i=0; i<arr.length; i++) {
-		if(arr[i]<100) {
 			arr[i] =sc.nextInt();
+		if(arr[i]>max) {
+			max=arr[i];
 		}
 		}
-		Arrays.sort(arr);
 		for (int i=0; i<arr.length; i++) {
-
+		if(max== arr[i]) {
+			A=i;
 		}
-		System.out.println(arr[arr.length-1]); // ÃÖ´ñ°ª ±¸ÇÏ±â
-		System.out.println(arr.length-1); // ¹è¿­¼ö ±¸ÇÏ±â
+		}
+		System.out.println(max); // ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½
+		System.out.println(A+1); // ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½
 		sc.close();
 	}
 
 }
-// ´Ù½Ã Ã³À½ºÎÅÍ ÇØ¾ßÇÒµí ½ÍÀ½
-// array.list »ç¿ëÀÌ ¸Â´ÂÁö È®ÀÎºÎÅÍ ÇØ¾ßÇÔ »çÀÌÁî °ª ±¸ÇÏ±â Èûµê
-// ¹è¿­·Î ÇÏ¸é ¹è¿­ °ª ÁöÁ¤ÀÌ ¾î·Á¿ò

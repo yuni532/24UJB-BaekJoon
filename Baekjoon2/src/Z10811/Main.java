@@ -7,11 +7,12 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt(); // ÃÑ ¹Ù±¸´ÏÀÇ ¼ö 
-		int M = sc.nextInt(); // M¹ø ¹Ù²Ü ¼ö 
+		int N = sc.nextInt(); // ï¿½ï¿½ ï¿½Ù±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 
+		int M = sc.nextInt(); // Mï¿½ï¿½ ï¿½Ù²ï¿½ ï¿½ï¿½ 
 		int[] arr = new int[N];
 		int l ;
 		int k ;
+		int t ;
 		for (int i = 0; i<arr.length; i++) {
 				arr[i]=i+1;
 		}
@@ -22,15 +23,16 @@ public class Main {
 		for(int j=0;j<M;j++) {
 			l = sc.nextInt()-1;
 			k = sc.nextInt()-1;
+			t= (k-l);
 
 			if((l+1)>=k) {
 			arr[l] = newar[k];
 			arr[k] = newar[l];
 			}else {
-				for (int i=0; i<M;i++) {
-				if (M==1) {
-				M=2;
-				} else	if (k>=0) {
+				for (int i=0; i<=t;i++) {
+//				if (M==1) {
+//				M=2;
+				if (k>=0) {
 					newar[l]=arr[k];
 				l++;
 				k--;
@@ -53,10 +55,10 @@ public class Main {
 //2	 1	4	3	5
 //3	 4	1	2	5
 //3	 4	1	2	5
-// 1	2	3	4	5 ¸¸µé°í					
-// ¹è¿­ º¹»çÇÑµÚ 
-//	lÀÌ¶û j ´Ù Ãâ·ÂÇÏ°í ´Ù½Ã jºÎÅÍ l±îÁö ºó °ø°£¿¡ ÀÔ·ÂÇÏ±â
-//	ÀÌ°Å M°ª±îÁö ´Ù µÇ¸é Ãâ·Â 
+// 1	2	3	4	5 ï¿½ï¿½ï¿½ï¿½ï¿½					
+// ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½ï¿½Ñµï¿½ 
+//	lï¿½Ì¶ï¿½ j ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Ù½ï¿½ jï¿½ï¿½ï¿½ï¿½ lï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï±ï¿½
+//	ï¿½Ì°ï¿½ Mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ 
 //
 //
 //

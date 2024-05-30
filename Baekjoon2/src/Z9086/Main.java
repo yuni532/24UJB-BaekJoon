@@ -13,17 +13,19 @@ public class Main {
 		String A ;
 		String[] Strings ;
 		for(int i =0; i<T; i++) {
+			
 			A = sc.next();
-			for(int j=0;j<A.length();j++) {
+			for(int j=0;j<=A.length();j++) {
 			if (j ==A.length()) {
 				System.out.print(arr.get(0));
-				System.out.println(arr.get(j));
+				System.out.println(arr.get(j-1));
 			}else {
 				Strings =A.split("");
 				arr.add(Strings[j]);
+			}
 	
 				
-			}
+			
 			}
 		}
 		
